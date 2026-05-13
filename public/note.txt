@@ -1,7 +1,7 @@
 /**
  * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @author: Vivek Ahirwar
+ * @summary: MERN Stack Developer focused on building scalable and modern web applications.
  */
 
 // --------------------------------------------------
@@ -10,96 +10,152 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "React.js",      // 90%
+    "Next.js",       // 75%
+    "Tailwind CSS",  // 95%
+    "JavaScript",    // 90%
+    "TypeScript",    // 75%
   ],
+
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",       // 85%
+    "Express.js",    // 85%
+    "MongoDB",       // 80%
+    "JWT Auth",      // 80%
+    "REST APIs",     // 85%
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+
+  tools: [
+    "Git & GitHub",
+    "Postman",
+    "Firebase",
+    "Figma",
+    "VS Code",
+    "Linux"
+  ]
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 2. EXPERIENCE LOG
 // --------------------------------------------------
 
 class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
+
+  /** 
+   * @period 2025 - Present
    */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
+  public async GHackk_Technologies(): Promise<Impact> {
+
+    const role = "Frontend Developer Intern";
+
+    // Worked on modern frontend interfaces
+    const projects = [
+      "Padhantu App",
+      "NotedWork Platform"
+    ];
+
+    const responsibilities = [
+      "Built responsive UI components",
+      "Worked with reusable React architecture",
+      "Improved user experience and layouts",
+      "Collaborated on real-world frontend features"
+    ];
+
+    return {
+      role,
+      projects,
+      responsibilities
+    };
   }
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
+  /**
+   * @period Personal Projects
    */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+  public Personal_Projects(): void {
+
+    this.mainFocus = "Full-Stack MERN Applications";
+
+    // Built CRM Dashboard
+    // Developed Trello-style Drag & Drop Kanban Board
+    // Created multiple MERN Stack mini projects
+    // Practiced authentication, APIs, dashboards, and state management
   }
 }
 
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
+// 3. FEATURED PROJECTS
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
+interface Project {
+  name: string;
+  stack: string[];
 }
 
-const trophyCabinet: HackathonWin[] = [
+const featuredProjects: Project[] = [
+
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    name: "CRM Dashboard",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ]
   },
+
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
+    name: "TaskFlow - Kanban Board",
+    stack: [
+      "React",
+      "DND Kit",
+      "Tailwind CSS",
+      "Firebase"
+    ]
+  },
+
+  {
+    name: "MERN Stack E-Commerce App",
+    stack: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "JWT"
+    ]
   }
 ];
 
 // --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// 4. EDUCATION
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
+  [
+    "Shaheed Bhagat Singh College, Delhi University",
+    "B.Com Programme"
+  ]
 ]);
+
+// --------------------------------------------------
+// 5. CURRENT STATUS
+// --------------------------------------------------
 
 export default new ProfessionalHistory();
 
 
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
+/* ---------------------------------------
+ TERMINAL OUTPUT
+---------------------------------------- */
+
+console.log(`
+$ vivek --status
+
+> Role: MERN Stack Developer
+> Status: Open to Internships & Opportunities
+> Focus: Full-Stack Web Development
+> Current Build: CRM Dashboard System
+> Location: India
+> Loading Projects... [██████████] 100%
 > Ready.
-```
+`);
